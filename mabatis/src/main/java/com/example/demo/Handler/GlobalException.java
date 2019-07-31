@@ -16,6 +16,7 @@ public class GlobalException {
     @ExceptionHandler
     public ResultBean handlerException(Exception e){
         e.printStackTrace();
+        System.out.println("hello");
 
         return new ResultBean("404","您的操作有误请稍后再试!");
     }
